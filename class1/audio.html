@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+            grid-template-areas: "heading";
+            background-color: orangered;
+        }
+
+        .heading {
+            grid-area: heading;
+            display: flex;
+            justify-content: space-between; /* Proper spacing */
+            align-items: center;
+            padding: 10px 50px;
+            width: 100%;
+        }
+
+        .heading img {
+            width: 200px;
+            height: 100px;
+        }
+
+        .combine {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-grow: 1; /* Allows stretching */
+            gap: 20px; /* Space between elements */
+        }
+
+        .combine h3 {
+            color: white;
+            margin: 0;
+        }
+
+        #get, #Sign {
+            background-color: orangered;
+            border: 1px black solid;
+            border-radius: 5px;
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <img src="swiggy.png">
+        <div class="combine">
+            <h3 id="swiggy">Swiggy Corporate</h3>
+            <h3 id="Partner">Partner with us</h3>
+            <button id="get">Get the app</button>
+            <button id="Sign">Sign in</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #a{
+      display: grid;
+      grid-template-columns: 100px 100px 100px;
+      grid-template-rows: 100px 100px ;
+    }
+    name{
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+    age{
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
+    sub{
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+    score{
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+  </style>
+</head>
+<body>
+      <div id="a">
+        <div class="name">name</div>
+        <div class="age">age</div>
+        <div class="sub">subject</div>
+        <div class="score">score</div>
+      </div>
+</body>
+</html>

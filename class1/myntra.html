@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Clone</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: 
+                "nav nav nav"
+                "header header header"
+                "section section section"
+                "section1 section1 section1"
+                "section2 section2 section2"
+                "main main main"
+                "footer footer footer";
+        }
+        nav {
+            grid-area: nav;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 60px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 10px;
+        }
+        nav input {
+            border-radius: 10px;
+            height: 35px;
+            padding-left: 10px;
+            background-color: whitesmoke;
+            border: 1px solid #ccc;
+        }
+        header {
+            grid-area: header;
+        }
+        header img {
+            width: 100%;
+            height: auto;
+        }
+        section, section img {
+            width: 100%;
+            height: auto;
+        }
+        #s1 { grid-area: section; }
+        #s2 { grid-area: section1; }
+        #s3 { grid-area: section2; }
+        
+        main {
+            grid-area: main;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .product {
+            border: 2px solid yellow;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        footer {
+            grid-area: footer;
+            text-align: center;
+            padding: 20px;
+        }
+        footer img {
+            width: 95%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <nav>
+            <img src="myntra.png" alt="Myntra Logo">
+            <h3>Men</h3>
+            <h3>Women</h3>
+            <h3>Kids</h3>
+            <h3>Home & Living</h3>
+            <h3>Beauty</h3>
+            <h3>Studio <sup style="color:red">New</sup></h3>
+            <input type="search" placeholder="Search for brand, product, and more">
+            <img src="myntrasidebar.png" alt="Sidebar">
+        </nav>
+        
+        <header>
+            <img src="first.png" alt="Header Image">
+        </header>
+        
+        <section id="s1">
+            <img src="second.png" alt="Section Image 1">
+        </section>
+        <section id="s2">
+            <img src="third.png" alt="Section Image 2">
+        </section>
+        <section id="s3">
+            <img src="fourth.png" alt="Section Image 3">
+        </section>
+        
+        <main>
+            <div class="product"><img src="fifth.png" height="200" width="200" alt="Watch"><figcaption>Watch</figcaption></div>
+            <div class="product"><img src="sixth.png" height="200" width="200" alt="T-shirt"><figcaption>T-shirt</figcaption></div>
+            <div class="product"><img src="seventh.png" height="200" width="200" alt="Shades"><figcaption>Shades</figcaption></div>
+            <div class="product"><img src="eight.png" height="200" width="200" alt="Crocs"><figcaption>Crocs</figcaption></div>
+            <div class="product"><img src="ninth.png" height="200" width="200" alt="Shirt"><figcaption>Shirt</figcaption></div>
+            <div class="product"><img src="tenth.png" height="200" width="200" alt="Hoodie"><figcaption>Hoodie</figcaption></div>
+            <div class="product"><img src="eleventh.png" height="200" width="200" alt="Pants"><figcaption>Pants</figcaption></div>
+            <div class="product"><img src="twelth.png" height="200" width="200" alt="Jacket"><figcaption>Jacket</figcaption></div>
+        </main>
+        
+        <footer>
+            <img src="final.png" alt="Footer Image">
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 30% 70%; 
+            grid-template-rows: auto; 
+            grid-template-areas: "aside article"; 
+            height: 100vh;
+        }
+        article {
+            grid-area: article;
+            background-color: red;
+            padding: 20px;
+        }
+        aside {
+            grid-area: aside;
+            background-color: aqua;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <aside>
+        <p>Hiii</p>
+    </aside>
+    <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste perspiciatis quasi eius nisi consectetur, rerum et quos nobis dignissimos veniam dolore at ex pariatur corrupti laboriosam dolor quam, odit ipsa.</p>
+    </article>
+</body>
+</html>

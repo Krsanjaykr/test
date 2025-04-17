@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+
+        }
+        #a{
+            display: grid;
+            grid-template-columns: 1/11;
+            grid-template-rows: 1/6;
+            
+            
+        }
+        .head{
+            grid-column: 1/11;
+            grid-row: 1/2;
+            background-color: antiquewhite;
+        }
+        .nav{
+            grid-column: 1/11;
+            grid-row: 2/3;
+            background-color: aqua;
+        }
+        .aside{
+            grid-column: 1/6;
+            grid-row: 3/4;
+            background-color: blanchedalmond;
+        }
+        .section{
+            grid-column: 6/11;
+            grid-row: 3/4;
+            background-color: blue;
+
+        }
+        .main{
+            grid-column: 1/11;
+            grid-row: 4/5;
+            background-color: blueviolet;
+        }
+        .sections{
+            grid-column: 1/6;
+            grid-row: 5/6;
+            background-color: cadetblue;
+        }
+        .asides{
+            grid-column: 6/11;
+            grid-row: 5/6;
+            background-color: aquamarine;
+        }
+        .footer{
+            grid-column: 1/11;
+            grid-row: 6/7;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="a">
+        <div class="head">header</div>
+        <div class="nav">nav</div>
+        <div class="aside">aside</div>
+        <div class="section">section</div>
+        <div class="main">main</div>
+        <div class="sections">section</div>
+        <div class="asides">aside</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>

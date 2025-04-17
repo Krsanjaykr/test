@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    #a{ 
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1/11;
+        grid-template-rows: 1/6;
+    }
+    .nav{ 
+        background-color: red;
+        grid-column: 1/11;
+        grid-row: 1/2;
+    }
+    .header{
+        background-color: aqua;
+        grid-column: 1/11;
+        grid-row: 2/3;
+    }
+    .section{
+        background-color: blue;
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+    .aside{
+        background-color: bisque;
+        grid-column: 5/11;
+        grid-row: 3/4;
+    }
+    .main{
+        grid-column: 1/11;
+        grid-row: 4/5;
+        background-color: azure;
+    }
+   </style>
+</head>
+<body>
+    <div id="a">
+        <div class="nav"> nav</div>
+        <div class="header">header</div>
+        <div class="section">section</div>
+        <div class="aside">aside</div>
+        <div class="main">main</div>
+       
+    </div>
+</body>
+</html>

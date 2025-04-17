@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: orangered;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .a {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 100px 100px 80px 150px 100px;
+            grid-template-areas: 
+                "nav nav nav" 
+                "header header header" 
+                "content content content" 
+                "footer footer footer" 
+                "footer1 footer1 footer1";
+        }
+        nav {
+            grid-area: nav;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 30px;
+        }
+        nav img {
+            width: 180px;
+            margin-left: 20px;
+        }
+        nav h3 {
+            color: white;
+            margin: 0 15px;
+        }
+        nav button {
+            width: 140px;
+            height: 45px;
+            border: 2px solid white;
+            border-radius: 7px;
+            font-size: 14px;
+            color: white;
+            cursor: pointer;
+        }
+        .app-btn {
+            background-color: orangered;
+        }
+        .login-btn {
+            background-color: black;
+        }
+        header {
+            grid-area: header;
+            text-align: center;
+        }
+        header h1 {
+            color: white;
+            font-size: 22px;
+        }
+        content {
+            grid-area: content;
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin-bottom: 10px; 
+        }
+        content input {
+            padding: 8px;
+            border: 2px solid white;
+            border-radius: 8px;
+            width: 250px; 
+        }
+        footer {
+            grid-area: footer;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 10px;
+        }
+        .food-item {
+            text-align: center;
+        }
+        .food-item img {
+            width: 90px;
+            display: block;
+            margin: 0 auto ;
+        }
+        .food-item p {
+            font-size: 14px;
+            margin-top: 5px;
+            color: black;
+            font-weight: bold;
+        }
+        footer1 {
+            grid-area: footer1;
+            text-align: center;
+            padding: 15px;
+            display: block;
+        }
+        footer1 img {
+            width: 100%;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <nav>
+            <img src="swiggy.png" alt="Swiggy Logo">
+            <h3>Swiggy Corporate</h3>
+            <h3>Partner with us</h3>
+            <button class="app-btn"><b>Get the App</b></button>
+            <button class="login-btn"><b>Log in</b></button>
+        </nav>
+
+        <header>
+            <h1>Order food & groceries. Discover<br>Best restaurants. Swiggy it!</h1>
+        </header>
+
+        <content>
+            <input type="text" placeholder="Enter your delivery location">
+            <input type="text" placeholder="Search for restaurants, items or more">
+        </content>
+
+        <footer>
+            <div class="food-item">
+                <img src="biriyani.jpeg" alt="Biriyani">
+                <p>Delicious Chicken Biriyani</p>
+            </div>
+            <div class="food-item">
+                <img src="biriyani.jpeg" alt="Biriyani">
+                <p>Spicy Hyderabadi Biriyani</p>
+            </div>
+            <div class="food-item">
+                <img src="biriyani.jpeg" alt="Biriyani">
+                <p>Classic Mutton Biriyani</p>
+            </div>
+            <div class="food-item">
+                <img src="biriyani.jpeg" alt="Biriyani">
+                <p>Veg Dum Biriyani</p>
+            </div>
+        </footer>
+
+        <footer1>
+            <img src="footer1.png" alt="Footer Image">
+        </footer1>
+    </div>
+</body>
+</html>
